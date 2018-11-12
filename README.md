@@ -11,8 +11,9 @@ En este caso se queria mejora el resimiento del sistema y dismiur el uso de memo
 
 
 # Lenguaje de Programacion: PHP
-En este lenguaje sera desarrlloda la palicacion
+En este lenguaje sera desarrollada la aplicacion
 
 Para esto se tomaron las caracteristica en comun que tenia los estudiantes y se pusieron en 
-un calse aparte, cuando se crea un nuevo estudiante se le solicita a una fabrica que de los datos en comun
-si ya tenia la instancia creada la pasa, si no la crea, de esto modo uilizando menos memoria.
+un clase aparte(DatosExtrasEstudiante) que implenta la interfaz Flyweight, cuando se crea un nuevo 
+Estudiante se le solicita a una clase FabricaEstudiante que entregue los datos en comun
+si ya tenia la instancia creada de DatosExtrasEstudiantela pasa, si no la crea, de esto modo uilizando menos memoria.
