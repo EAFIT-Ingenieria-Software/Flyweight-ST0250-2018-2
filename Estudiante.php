@@ -14,10 +14,6 @@
         public $nombre;
         public $fechaNacimiento;
         public $email;
-        public $tipoDocumento;
-        public $pregrado;
-        public $beca;
-        public $tieneSostenimiento;
 
        function __construct($codigo, $numeroDocumento, $nombre, $fechaNacimiento, $emai, $tipoDocumento, $pregrado, $beca, $tieneSostenimiento) {
            $this->codigo = $codigo;
@@ -26,6 +22,21 @@
            $this->fechaNacimiento = $fechaNacimiento;
            $this->email = $emai;
            $this->datosExtra = FabricaEstudiante.obtenerDatos();
+        }
+        public function obtenerTipoDocumento() {
+          return $datosExtra->tipoDocumento;
+        }
+
+        public function obtenerPregrado() {
+          return $datosExtra->pregrado;
+        }
+
+        public function obtenerBeca() {
+          return $datosExtra->beca;
+        }
+
+        public function obtenerTieneSostenimiento() {
+          return $datosExtra->tieneSostenimiento;
         }
     }
  ?>
